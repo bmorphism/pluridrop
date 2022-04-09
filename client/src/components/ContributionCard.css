@@ -1,0 +1,176 @@
+/*.contributionCardContainer {*/
+/*  min-width: 300px;*/
+/*  max-width: 400px;*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  padding: 20px;*/
+/*  min-height: 260px;*/
+/*  !* From https://css.glass *!*/
+/*  background: rgba(255, 255, 255, 0.05);*/
+/*  border-radius: 16px;*/
+/*  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);*/
+/*  !* TODO: add blur back after playing fixing z-index issue where blob contributions canvas is getting rendered behind *!*/
+/*  !* backdrop-filter: blur(5px);*!*/
+/*  !* -webkit-backdrop-filter: blur(5px); *!*/
+/*  border: 1px solid rgba(255, 255, 255, 0.3);*/
+/*  height: 400px;*/
+/*  cursor:pointer;*/
+/*}*/
+
+.full.full {
+  width: 100%;
+  min-height:360px;
+  max-width:none;
+}
+
+/* remove bg when its in a modal. */
+.compactContributionCardContainer.full {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: default;
+  box-shadow: none;
+}
+
+.compactContributionCardContainer.preview-card {
+  margin-top: 1rem;
+  cursor: default;
+}
+
+/*.contributionCardContainer > h2 {*/
+/*  margin-bottom: 12px;*/
+/*}*/
+
+/*.contributionCardContainer p {*/
+/*  padding: 0 1em 0 0;*/
+/*}*/
+
+/*.contributionCardContainer canvas {*/
+/*  height: auto !important;*/
+/*}*/
+
+.attribution {
+  display: flex;
+  align-items: self-end;
+}
+
+.attribution > .link {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-4);
+  position: relative;
+  background: var(--background-higher);
+  border-radius: var(--border-radius-8);
+  padding: var(--space-4) var(--space-8);
+  font-family: var(--font-family-secondary);
+  font-size: var(--font-size-xsmall) !important;
+}
+
+.attribution > .link:hover {
+  background: var(--background-higher-higher);
+}
+
+/* .attribution > .link > p {
+  padding: 0 0.2rem 0 0;
+  display: inline-block;
+} */
+
+.attribution > .link > svg {
+  display: inline-block;
+  padding-bottom: 2px;
+}
+
+.author-section {
+  flex: 0 0 150px;
+  max-width: 150px;
+}
+
+.author-section,
+.author-section > p {
+  text-align: right;
+  padding: 0;
+}
+
+.author {
+  position: relative;
+  font-weight: bold;
+  color: var(--accent-default);
+  font-family: var(--font-family-secondary);
+  font-size: var(--font-size-small) !important;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-left: .25rem;
+}
+
+/**
+ * COMPACT CONTRIBUTION STYLES
+ */
+
+.compactContributionCardContainer {
+  width: 300px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-16);
+  height: 360px;
+  position: relative;
+  /* From https://css.glass */
+  background: var(--background-default);
+  border-radius: var(--border-radius-16);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  /* backdrop-filter: blur(5px); */
+  /* -webkit-backdrop-filter: blur(5px); */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+.compactContributionCardContainer:not(.full):not(.preview-card):hover {
+  background: var(--background-higher);
+}
+
+.compactContributionCardContainer ::-webkit-scrollbar {
+  width: 5px;
+}
+
+.compactContributionCardContainer ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  transition: background 0.5s ease;
+}
+
+/* Handle on hover */
+.compactContributionCardContainer ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.compactContributionCardContainer .response {
+  z-index: 10;
+  text-shadow: var(--text-shadow-default);
+  /* overflow-y:clip;
+  text-overflow:ellipsis;
+  white-space: break-spaces;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* NOTE: this needs to change with the height of compact card */
+  /* -webkit-line-clamp: 8; */
+}
+
+.compactContributionCardContainer > h2 {
+  margin-bottom: 12px;
+}
+
+.compactContributionCardContainer p {
+  font-size: 1rem;
+  padding-top: 0px;
+}
+
+.compactContributionCardContainer canvas {
+  height: 60px;
+}
+
+.authorButton:hover {
+  opacity: .85;
+}

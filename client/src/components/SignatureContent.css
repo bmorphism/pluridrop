@@ -1,0 +1,57 @@
+.signatureContainer {
+  width: 100%;
+  padding-top: 32px;
+  /* background: var(--background-default); */
+  border-radius: var(--border-radius-12);
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); */
+  /* backdrop-filter: blur(10px); */
+  /* -webkit-backdrop-filter: blur(10px); */
+  /* border: 1px solid var(--outline-default); */
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.signatureContainer p {
+  font-size: 1.2rem;
+}
+
+.signature {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.date {
+  font-size: 1rem;
+}
+
+.twitterName {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  display: inline-flex;
+  align-items: center;
+  font-family: "Roboto Mono";
+  font-size: 0.9rem;
+  padding: 0.25rem 0.7rem;
+}
+
+.twitterName > span {
+  margin-left: 4px;
+}
+
+.signatureName {
+  text-overflow: ellipsis;
+  word-break: break-word;
+  white-space: nowrap;
+  overflow: hidden;
+}

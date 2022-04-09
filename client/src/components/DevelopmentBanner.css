@@ -1,0 +1,18 @@
+.banner {
+    /* position: fixed; */
+    /* top: 0px; */
+    width: 100%;
+    background: #496581;
+    padding: 24px 24px 12px 24px;
+    /* z-index: 1000; */
+}
+
+
+.banner > p:first-child {
+    padding-top: 0px;
+}
+
+.banner > p {
+    font-size: 1.2rem !important;
+    padding-top: 12px;
+}
