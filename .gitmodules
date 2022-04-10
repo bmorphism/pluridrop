@@ -1,0 +1,3 @@
+[submodule "pluridrop/juno-tools"]
+	path = pluridrop/juno-tools
+	url = git@github.com:CosmosContracts/juno-tools.git
