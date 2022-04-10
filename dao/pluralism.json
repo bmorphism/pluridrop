@@ -1,0 +1,38 @@
+{
+  "name": "Pluriverse",
+  "description": "https://pluriverse.chat",
+  "image_url": "https://imgur.com/rGSI83a",
+  "gov_token": {
+    "instantiate_new_cw20": {
+      "cw20_code_id": 37,
+      "label": "juno1v03v82syyy54ernxqa6zpmda9c2evgwjmsuav4",
+      "msg": {
+        "name": "juno1v03v82syyy54ernxqa6zpmda9c2evgwjmsuav4",
+        "symbol": "PLURALISM",
+        "decimals": 6,
+        "initial_balances": [
+          {
+            "address": "juno1v03v82syyy54ernxqa6zpmda9c2evgwjmsuav4",
+            "amount": "42000000"
+          }
+        ]
+      },
+      "stake_contract_code_id": 41,
+      "initial_dao_balance": "1337000000",
+      "unstaking_duration": {
+        "time": 0
+      }
+    }
+  },
+  "threshold": {
+    "threshold_quorum": {
+      "threshold": "0.51",
+      "quorum": "0.33"
+    }
+  },
+  "max_voting_period": {
+    "time": 604800
+  },
+  "proposal_deposit_amount": "1000000",
+  "refund_failed_proposals": true
+}
